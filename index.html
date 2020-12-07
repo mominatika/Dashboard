@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+	<title>dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+
+</head>
+<body>
+<div class="container">
+<!-- navbar start -->
+<nav class="navbar">
+	<!-- <span>nav</span> -->
+	<div class="nav_icon" onclick="toggleSlidebar()">
+		<i class="fa fa-bars"></i>
+	</div>
+
+	<div class="navbar_left">
+		<a href="#"><i class="fa fa-search"></i></a>
+	
+
+	</div>
+	<div class="navbar_right">
+			<a href="#">Registration</a>
+	<a href="#">Login</a>
+	<!-- <a class="active" href="#">admin</a> -->
+
+		</div>
+</nav>
+<!-- navbar end -->
+
+<!-- main start -->
+<main>
+	<!-- <span>main</span> -->
+	<div class="main-container">
+		<div class="main-title">
+			<img width="30" src="icons/hello.svg" alt="">
+			<div class="main_greeting">
+				<h1>Hello  Admin</h1>
+				<p>welcome to your admin dashboard</p>
+			</div>
+		</div>
+			<div class="main_cards">
+				<div class="card">
+				<i class="fa fa-user-o fa-2x text-lightblue"></i>
+				<div class="card_inner">
+					<p class="text-primary-p">Number of Subscriber</p>
+					<span class="font-bold text-title">578</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa fa-calendar fa-2x"></i>
+				<!-- <i class="fa fa-calender fa-2x text-red"></i> -->
+				<div class="card_inner">
+					<p class="text-primary-p">Times of Watching</p>
+					<span class="font-bold text-title">578</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa fa-camera-retro fa-2x text-red"></i>
+			
+				<div class="card_inner">
+					<p class="text-primary-p">Number video</p>
+					<span class="font-bold text-title">578</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa fa-thumbs-up fa-2x"></i>
+				<div class="card_inner">
+					<p class="text-primary-p">Number of like</p>
+					<span class="font-bold text-title">578</span>
+				</div>
+			</div>
+			</div>
+
+
+				<div class="charts">
+	<div class="charts-left">
+		<div class="charts-left-title">
+			<div class="daily_report">
+				<h1>daily report</h1>
+				<p>Cupertino, california,USA</p>
+
+			</div>
+			<i class="fa fa-users fa-2x"></i>
+		</div>
+
+		<div id="apex1"></div>
+	</div>
+	<div class="charts_right">
+		<div class="charts_right_title">
+			<div>
+				<h1>Starts Report</h1>
+					<p>Cupertino, california,USA</p>
+
+			</div>
+				<i class="fa fa-users fa-2x"></i>
+
+		</div>
+		<div class="charts_right_cards">
+			
+			<div class="card1">
+				<h1>Income</h1>
+				<p>$75,000</p>
+			</div>
+			
+			<div class="card1">
+				<h1>sales</h1>
+				<p>$50,000</p>
+			</div>
+			<div class="card1">
+				<h1>user</h1>
+				<p>$30,000</p>
+			</div>
+			<div class="card1">
+				<h1>order</h1>
+				<p>$10,000</p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+	</div>
+</main>
+
+<!-- end main part -->
+<div id="sidebar" class="sidebar_close">
+	<!-- <span>sidebar</span> -->
+	<div class="sidebar_title">
+		<div class="sidebar_img">
+			<img src="icons/logo.png" alt="">
+			<h1>corebite</h1>
+		</div>
+		<i class="fa fa-times" id="sidebarIcon" onclick="CloseSlider"></i>
+	</div>
+	<div class="sidebar_menu">
+		<div class="sidebar_link active_menu_link dashboard">
+			<i class="fa fa-home"></i><a href="#">dashboared</a>
+		</div>
+		<h2>MNG</h2>
+		<div class="sidebar_link">
+			<i class="fa fa-home"></i>
+			<a href="#">Home</a>
+		</div>
+		<div class="sidebar_link">
+			<i class="fa fa-address-card"></i>
+			<a href="#">About Us</a>
+		</div>
+		<div class="sidebar_link">
+			<i class="fa fa-cog"></i>
+			<a href="#">Service</a>
+		</div>
+		<div class="sidebar_link">
+			<i class="fa fa-briefcase"></i>
+			<a href="#">Portfolio</a>
+		</div>
+		<div class="sidebar_link">
+			<i class="fa fa-id-badge"></i>
+			<a href="#">Contact Us</a>
+		</div>
+
+		<h2>payroll</h2>
+			<div class="sidebar_link">
+			<i class="fa fa-money"></i>
+			<a href="#">Payroll</a>
+		</div>
+			<div class="sidebar_link">
+			<i class="fa fa-briefcase"></i>
+			<a href="#">paygrade</a>
+		</div>
+			<div class="sidebar_logout">
+			<i class="fa fa-power-off"></i>
+			<a href="#">Apply for Leave</a>
+		</div>
+	</div>
+</div>
+
+
+	
+
+</div>
+<!-- end container -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('.nav_icon').click(function(){
+			$('#sidebar').addClass("sidebar_responsive");
+		});
+
+		
+
+		$('#sidebarIcon').click(function(){
+			$('#sidebar').removeClass("sidebar_responsive");
+
+		});
+
+	});
+</script>
+</body>
+</html>
