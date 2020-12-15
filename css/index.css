@@ -162,7 +162,7 @@ main{
       height: 70px;
       padding: 25px;
       background-color: #ffffff;
-      box-shadow: 5px 5px 13px #ededed,-5px -5px 13px #ffffff;
+      box-shadow: 5px 5px 13px #7b7575,-5px -5px 13px #ffffff;
       text-align: center;
       
 }
@@ -186,7 +186,7 @@ display: grid;
         padding: 25px;
         border-radius: 5px;
         background-color: #ffffff;
-        box-shadow: 5px 5px  13px #ededed,-5px -5px 13px #ffffff;
+        box-shadow: 5px 5px  13px #7b7575,-5px -5px 13px #ffffff;
 }
 .charts-left-title,.charts_right_title{
     display: flex;
@@ -223,7 +223,7 @@ display: grid;
     padding: 25px;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 5px 5px 13px #ededed,-5px -5px 13px #ffffff;
+    box-shadow: 5px 5px 13px #7b7575,-5px -5px 13px #ffffff;
 }
 .charts_right_cards{
   display: grid;
@@ -290,14 +290,14 @@ display: grid;
 }
 .sidebar_menu{
   /*outline: 1px solid green;*/
-              padding: 10px;
+              padding: 20px;
 } 
 .sidebar_menu h2{
     color: #3ea175;
     font-size: 16px;
     margin: 15px 0 5px 0;
     font-weight: 700;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
 }
 .sidebar_menu h2:hover{
         color: white;
@@ -315,7 +315,7 @@ display: grid;
                font-size: 14px;
             /*text-decoration: */
               display: inline-block;
-              padding:7px 0;
+              padding:10px 0;
               color:white;
             /*font-weight: 700;*/
             /*padding: 1px*/
@@ -323,8 +323,10 @@ display: grid;
 
  }
  .sidebar_link:hover{
-                  background-color: rgba(62,161,117,0.3);
- }
+                  background-color: rgba(62,161,117,0.3);   
+                  /*padding:10px;*/
+                  width: 100%;
+ }    
 
  .active_menu_link a{
   padding: 10px 0;
@@ -342,19 +344,23 @@ display: grid;
  .sidebar_logout{
               margin-top: 20px;
               color: #e65061;
-              padding: 10px;
  }
- .sidebar_logout:hover{
+ /*.sidebar_logout:hover{
                 background-color: rgba(62,161,117,0.3);
                 border-radius: 5px;
- }
+ }*/
  .sidebar_logout a{
                 color: #e65061;
                 font-weight: 700;
                 text-transform: uppercase;
  }
+  .sidebar_logout a:hover{
+
+                color: red;
+                font-weight: 700;
+ }
  .sidebar_logout i{margin-right: 10px;
-                    font-size18px;
+                    font-size:18px;
  }
  .sidebar_responsive{
   display: inline !important;
